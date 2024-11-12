@@ -1,13 +1,13 @@
 # T-FLIPFLOP-POSEDGE
 
-**AIM:**
+### AIM:
 To implement  T flipflop using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+### SOFTWARE REQUIRED:
 Quartus prime
 
-**THEORY**
-**T Flip-Flop**
+### THEORY:
+### T Flip-Flop:
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://github.com/naavaneetha/T-FLIPFLOP-POSEDGE/assets/154305477/458a68fe-2d08-4a9d-ac4f-7ae0480ce0bd)
@@ -21,7 +21,7 @@ Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop
 
 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒Q(t+1)=T⊕Q(t)
 
-**Procedure**
+### Procedure:
 1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
 
 2.Declare Inputs and Outputs: Declare input and output ports for the module.
@@ -36,7 +36,7 @@ From the above characteristic table, we can directly write the next state equati
 
 7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes.
 
-**PROGRAM**
+### PROGRAM:
 ```
 Developed by:GOWRISANKAR P
 RegisterNumber:212222230041
@@ -58,12 +58,12 @@ end
 assign q_bar = ~q;
 endmodule
 ```
-**RTL LOGIC FOR FLIPFLOPS**
+### RTL LOGIC FOR FLIPFLOPS:
 ![EXP 9 1](https://github.com/23003250/T-FLIPFLOP-POSEDGE/assets/139331462/82c919a8-f2b4-4f72-a07b-96724eea5626)
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+### TIMING DIGRAMS FOR FLIP FLOPS:
 ![EXP 9 2](https://github.com/23003250/T-FLIPFLOP-POSEDGE/assets/139331462/821909d2-bfb8-4239-99cc-e816f8170f6e)
 
-**RESULTS**
+### RESULTS:
 Thus the program to implement a T flipflop using verilog and validating their 
 functionality using their functional tables is successfully completed.
